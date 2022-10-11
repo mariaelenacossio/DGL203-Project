@@ -30,14 +30,43 @@ html {
 }
 
 
-header {
-background: url(images/PHOTO-2022-10-10-20-04-33\ 5.jpg) no-repeat center center fixed;
-/*Photo by Paul Palacios*/
-z-index: -1;
-background-size: cover;
-height: 100%;
-overflow: hidden;
-}
+
+/* Container needed to position the button. Adjust the width as needed */
+.hero-img {
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Make the image responsive */
+  .hero-img img {
+    width: 100%;
+    height: 100%;
+    opacity: 75%;
+  }
+  .hero-img a {
+    text-decoration: none;
+  }
+  
+  /* Style the button and place it in the middle of the container/image */
+  .hero-img .btn-hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #fcbf49;
+    color: white;
+    font-size: 2rem;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .hero-img .btn-hero:hover {
+    background-color: white;
+    border: 1px solid #fcbf49;
+    color: #fcbf49;
+  }
 
 /* Header Section */
 nav { /* This is to display the menu on smaller screens */
@@ -47,6 +76,7 @@ nav { /* This is to display the menu on smaller screens */
     left: -110%;
     width: 100%;
     transition: 0.22s ease-in-out;
+    background-color: #fcbf49;
   }
   
   nav ul {
@@ -63,7 +93,7 @@ nav { /* This is to display the menu on smaller screens */
   }
   
   nav ul li a:hover {
-    color: #606C38;
+    color: #fcbf49;
     background: #e0e5eb;
   }
   
@@ -74,7 +104,7 @@ nav { /* This is to display the menu on smaller screens */
     z-index: -1;
     height: 100vh;
     width: 100vw;
-    background-color: #606C38;;
+    background-color: #fcbf49;
     background-size: cover;
   }
   
@@ -91,7 +121,7 @@ nav { /* This is to display the menu on smaller screens */
       height: 48px;
       width: 100%;
       border-bottom: 1px solid #e0e5eb;
-      padding: 0 1.5rem;
+      /*padding: 0 1.5rem;*/
       display: flex; /* This will allow the element to sit side by side (Mobile) */
       align-items: center; /* This will vertically center the logo and hamburger menu within the flex container (Mobile) */
       justify-content: space-between; /* Allows the items to sit at the far edges of the flex-parent and the space between the it will grow (Mobile) */
@@ -110,6 +140,7 @@ nav { /* This is to display the menu on smaller screens */
     width: 2rem;
     height: 1.25rem;
     height: 2rem;
+    padding: 0 1.5rem;
   }
   
   input#navToggle ~ label > span,
@@ -122,7 +153,7 @@ nav { /* This is to display the menu on smaller screens */
     height: 0.125rem;
     width: 1.75rem;
     opacity: 1;
-    background: #fff;
+    background: black;
     transition: 0.14s ease-in-out;
   }
   
@@ -182,7 +213,6 @@ nav { /* This is to display the menu on smaller screens */
     text-align: center;
   }
   .projects h3 {
-    display: flex;
     justify-items: center;
     background-color: rgba(255, 255, 255, 0.5);
     text-shadow: 1px 1px 2px rgba(51, 51, 51, 0.7);
@@ -191,18 +221,16 @@ nav { /* This is to display the menu on smaller screens */
     margin-left: 1rem;
   }
 
-  .projects p {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    text-align: justify;
-  }
+  /*.projects p {
+    display: flex;
+    justify-content: center;
+  }*/
 
   .projectsList {
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     grid-gap: 1rem; /* This will add some space between the cards */
-    /* */
   }
   
   .projectsList li {
@@ -215,6 +243,12 @@ nav { /* This is to display the menu on smaller screens */
     grid-template-columns: 1fr; /* This is going to create one column */
     grid-template-rows: auto minmax(140px, 1fr) auto; /* This will create 3 rows */
   }
+
+  .projectsList p {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
   
   .projectsList h3,
   .projectsList img { 
@@ -256,18 +290,18 @@ nav { /* This is to display the menu on smaller screens */
   }
   
   .projects .btn {
-    background: rgba(233, 237, 201, 90%);
-    color: #606C38;
-    
+    background: #fcbf49;
+    color: white; 
     text-decoration: none;
     padding: 10px;
     border-radius: 10px;
-    display: flex;
   }
   
   .projects .btn:hover {
-    color: #F7FFF7;
-    background: #606C38;
+    color: #fcbf49;
+    border: 1px solid #fcbf49;
+    background: white
+    
   }
   
 /* Media Queries */
@@ -275,7 +309,7 @@ nav { /* This is to display the menu on smaller screens */
     
     
     nav {
-      display: flex;
+        display: flex;
         justify-content: right;
         align-items: center;
         top: 0;
@@ -286,7 +320,7 @@ nav { /* This is to display the menu on smaller screens */
     }
     .navWrap { 
       /* (Logo-Menu) This is for the element to appear always in the center of the page without being too far from each other */
-      /*display: grid; */
+      /*display: grid;*/
       grid-template-columns: 100px minmax(auto, 1100px);
       justify-content: center;
       height: auto;
@@ -330,15 +364,27 @@ nav { /* This is to display the menu on smaller screens */
        }
     
        .projects h3 {
+        display: flex;
         font-size: 30px;
         text-align: center;
         justify-content: center;
        }
+
+    
+      .projects p {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: justify;
+      }
     
     .projectsList {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* This will make the cards to display in 3 ccolumns*/
     }
     
+    .projectsList h3 {
+        text-align: left;
+    }
+   
     .projects article {
       width: 90%;
       /*display: flex;*/
@@ -353,5 +399,6 @@ nav { /* This is to display the menu on smaller screens */
     .projects p {
       flex: 3;  /*This is to define ability of the element to grow if necessary*/ 
     }
+
 }    
 
