@@ -1,0 +1,357 @@
+/* GLOBAL STYLES */
+/*
+Pallete
+#fcbf49 Yellow
+
+
+
+
+
+*/
+
+html { 
+    scroll-behavior: auto;
+    overflow-y: scroll; overflow-x:hidden;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Poppins';
+  }
+
+  .content-wrap  {
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+
+header {
+background: url(images/PHOTO-2022-10-10-20-04-33\ 5.jpg) no-repeat center center fixed;
+/*Photo by Paul Palacios*/
+z-index: -1;
+background-size: cover;
+height: 100%;
+overflow: hidden;
+}
+
+/* Header Section */
+nav { /* This is to display the menu on smaller screens */
+    position: fixed;
+    z-index: -1;
+    top: 3rem;
+    left: -110%;
+    width: 100%;
+    transition: 0.22s ease-in-out;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    color: #fff;
+    transition: 0.14s ease-in-out;
+  }
+  
+  nav ul li a:hover {
+    color: #606C38;
+    background: #e0e5eb;
+  }
+  
+  nav::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    background-color: #606C38;;
+    background-size: cover;
+  }
+  
+  nav ul li:last-of-type::before {
+    content: "";
+    display: block;
+    padding: 0.5rem;
+  }
+  
+  .navWrap {
+      position: sticky; /*  ** note the menu will not be sticky until we add more page content */
+      top: 0;
+      z-index: 99;
+      height: 48px;
+      width: 100%;
+      border-bottom: 1px solid #e0e5eb;
+      padding: 0 1.5rem;
+      display: flex; /* This will allow the element to sit side by side (Mobile) */
+      align-items: center; /* This will vertically center the logo and hamburger menu within the flex container (Mobile) */
+      justify-content: space-between; /* Allows the items to sit at the far edges of the flex-parent and the space between the it will grow (Mobile) */
+  
+    }
+  
+  /* Hamburger Menu */
+  
+  input#navToggle { /* This will make the toggle menu no to display on larger screens*/
+    display: none;
+  }
+  
+  input#navToggle ~ label {
+    position: absolute;
+    padding: 0.25rem;
+    width: 2rem;
+    height: 1.25rem;
+    height: 2rem;
+  }
+  
+  input#navToggle ~ label > span,
+  input#navToggle ~ label > span::before,
+  input#navToggle ~ label > span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0.75rem;
+    height: 0.125rem;
+    width: 1.75rem;
+    opacity: 1;
+    background: #fff;
+    transition: 0.14s ease-in-out;
+  }
+  
+  input#navToggle ~ label > span::before {
+    top: -0.5rem;
+  }
+  
+  input#navToggle ~ label > span::after {
+    top: 0.5rem;
+  }
+  
+  #navToggle:checked ~ label > span {
+    width: 0;
+    background: rgba(18, 18, 18, 0);
+  }
+  
+  #navToggle:checked ~ label > span::before {
+    transform: rotateZ(45deg);
+    top: 0;
+  }
+  
+  #navToggle:checked ~ label > span::after {
+    transform: rotateZ(-45deg);
+    top: 0;
+  }
+  
+  #navToggle:checked ~ nav {
+    left: 0;
+  }
+
+
+/* Needs and Solutions Block*/
+
+.projects {
+    padding: 1rem;
+    margin: auto;
+    max-width: 1200px;
+  }
+  
+  .projects article { /* This one contains the description of the article */
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 1000px;
+  }
+  
+  .projects article h2 {
+    display: flex;
+    justify-items: center;
+    color: black;
+    font-size: 5rem;
+    margin-left: 1rem;
+  }
+
+  .projects article p {
+    border-top: solid 1px black;
+    padding-top: 1rem;
+    text-align: center;
+  }
+  .projects h3 {
+    display: flex;
+    justify-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-shadow: 1px 1px 2px rgba(51, 51, 51, 0.7);
+    color: #fcbf49;
+    font-size: 2.5rem;
+    margin-left: 1rem;
+  }
+
+  .projects p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: justify;
+  }
+
+  .projectsList {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-gap: 1rem; /* This will add some space between the cards */
+    /* */
+  }
+  
+  .projectsList li {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 6px;
+    border: solid 1px #dedede;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.8rem;
+    display: grid;
+    grid-template-columns: 1fr; /* This is going to create one column */
+    grid-template-rows: auto minmax(140px, 1fr) auto; /* This will create 3 rows */
+  }
+  
+  .projectsList h3,
+  .projectsList img { 
+    grid-row: 1 /2; /* This is for the image and h3 to share the same row */
+    grid-column: 1; /* This will allow both items to take up 1 and share the first row and take the full width */
+  }
+  
+  .projectsList img {
+  display: flex;
+  justify-items: center;
+  z-index: 95;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  }
+  
+  .projectsList h3 {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    font-size: 2rem;
+    margin-left: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(51, 51, 51, 0.7);
+    align-self: end; /* This is for the h3 to align at the bottom of the row */
+  }
+  
+  .projects a {
+    border-radius: 3px;
+    background-color: #39bae6;
+    color: #fff;
+    height: 2rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* this is for the content of the web cards to be centered */
+  }
+  
+  .projects .btn {
+    background: rgba(233, 237, 201, 90%);
+    color: #606C38;
+    
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+  }
+  
+  .projects .btn:hover {
+    color: #F7FFF7;
+    background: #606C38;
+  }
+  
+/* Media Queries */
+@media screen and (min-width: 700px){
+    
+    
+    nav {
+      display: flex;
+        justify-content: right;
+        align-items: center;
+        top: 0;
+        width: 100%;
+        padding-right: 1rem;
+        /*background-color: rgba(233, 237, 201, 60%);*/
+        position: fixed;
+    }
+    .navWrap { 
+      /* (Logo-Menu) This is for the element to appear always in the center of the page without being too far from each other */
+      /*display: grid; */
+      grid-template-columns: 100px minmax(auto, 1100px);
+      justify-content: center;
+      height: auto;
+    }
+    
+    .navToggleLabel {
+      display: none; /* This is to hide the hamburger menu at the large screen*/
+    }
+    
+    nav {
+      position: initial; /* To be longer in screen*/
+    }
+    
+    nav ul { /* This is for the content of the menu such as Home, About, etc. */
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    
+    nav ul li a {
+      border-bottom: none;
+    }
+    
+    nav ul li a:hover {
+      background: transparent;
+    }
+    
+    nav::after,
+    nav ul li:last-of-type::before {
+      display: none;
+      padding: initial;
+    }
+    
+    
+    /*-------------------------Projects-------------------------------*/
+    
+    .projects h2 {
+        font-size: 50px;
+        text-align: center;
+        justify-content: center;
+       }
+    
+       .projects h3 {
+        font-size: 30px;
+        text-align: center;
+        justify-content: center;
+       }
+    
+    .projectsList {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* This will make the cards to display in 3 ccolumns*/
+    }
+    
+    .projects article {
+      width: 90%;
+      /*display: flex;*/
+      align-items: center; /* This will align the items vertically within the article */
+    }
+    
+    .projects h2,
+    .projects h3 {
+      margin: 0 1rem 0 0;
+    }
+    
+    .projects p {
+      flex: 3;  /*This is to define ability of the element to grow if necessary*/ 
+    }
+}    
+
