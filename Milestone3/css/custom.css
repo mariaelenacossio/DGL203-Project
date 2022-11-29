@@ -11,11 +11,12 @@
     height: 400px;
     width: 400px;
 }
-
 .card {
     height: 500px;
 }
-
-h5, p {
-    align-items: center;
+.card-body  {
+    text-align: center;
+}
+.card-body h5, p {
+    text-align: center;
 }
