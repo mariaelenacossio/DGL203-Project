@@ -8,6 +8,12 @@
 
 .card-body img {
     padding: 2rem;
+    height: 400px;
+    width: 400px;
+}
+
+.card {
+    height: 500px;
 }
 
 h5, p {
