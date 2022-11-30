@@ -2,6 +2,13 @@ body {
     font-family: 'Poppins';
 }
 
+.navbar-brand img {
+    width: 250px;
+    height: 50px;
+   
+
+}
+
 .bg-image {
     background-image: url('/img/Quequitos-1.jpg');
       width: 100%;
@@ -49,19 +56,15 @@ body {
 /*Testimonials*/
 .carousel-item img {
     border-radius: 10px;
-    width: 100vh;
+    width: 75vh;
     height: 80vh;
 }
 /* Block divider */
 hr {
     border-color: #F05F44;
-    height: 3px;
+    height: 5px;
     width: 85%;
 }
-
-
-
-
 
 /* footer latest Events*/
 
