@@ -52,7 +52,12 @@ body {
     width: 100vh;
     height: 80vh;
 }
-/* Business description block*/
+/* Block divider */
+hr {
+    border-color: #F05F44;
+    height: 3px;
+    width: 85%;
+}
 
 
 
