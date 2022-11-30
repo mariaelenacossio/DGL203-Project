@@ -1,3 +1,7 @@
+body {
+    font-family: 'Poppins';
+}
+
 .bg-image {
     background-image: url('/img/Quequitos-1.jpg');
       width: 100%;
@@ -42,6 +46,21 @@
       color: #333;
     }
 
+/*Testimonials*/
+.carousel-item img {
+    border-radius: 10px;
+    width: 100vh;
+    height: 80vh;
+}
+
+/* footer latest Events*/
+
+.media-left img {
+    width: 60px;
+    height: 60px;
+    padding: 2px;
+    margin: 2px;
+}
 /*footer social*/
     
 .blue {
