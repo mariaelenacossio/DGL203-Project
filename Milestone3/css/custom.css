@@ -16,17 +16,17 @@ body {
     background-size: cover;
 }
 
-.card-body img {
+.benefits .card-body img {
     padding: 2rem;
     height: 400px;
     width: 400px;
 }
-.card {
+.benefits.card {
     height: 500px;
 }
 
-.card-body h5, 
-.card-body p {
+.benefits .card-body h5, 
+.benefits .card-body p {
     text-align: center;
 }
 
@@ -52,6 +52,11 @@ body {
     width: 100vh;
     height: 80vh;
 }
+/* Business description block*/
+
+
+
+
 
 /* footer latest Events*/
 
