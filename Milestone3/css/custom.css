@@ -31,8 +31,6 @@ body {
   background-repeat: no-repeat;
 }  
 
-
-
 /****************************************/
 
 /* Navbar */
@@ -238,10 +236,16 @@ hr {
 
       .footer .quick-info li a { color: #fff;}
 
-      .footer .quick-info li .icon {
-        font-size: 20px;
-        color: #f88020; 
-      }
+    /*footer Socials*/
+.footer .quick-info .icon {
+  color: green;
+}
+.footer .quick-info .icon-2 {
+  color: red;
+}
+.footer .tweets .icon-3 {
+  color: #007bff;
+}
 
     .footer .subscribe { position: relative;}
 
