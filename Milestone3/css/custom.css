@@ -237,13 +237,24 @@ hr {
       .footer .quick-info li a { color: #fff;}
 
     /*footer Socials*/
+    /* Whatsapp */
 .footer .quick-info .icon {
   color: green;
 }
+
+/* Gmail */
 .footer .quick-info .icon-2 {
   color: red;
 }
-.footer .tweets .icon-3 {
+
+/* Instagram */
+.footer .quick-info .icon-4 {
+  color: orange;
+}
+
+/* Facebook */
+.footer .tweets .icon-3,
+.footer .quick-info .icon-3 {
   color: #007bff;
 }
 
