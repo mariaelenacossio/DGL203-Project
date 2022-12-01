@@ -216,6 +216,25 @@ hr {
       font-size: 16px;
       margin-bottom: 10px; 
     }
+    /* .icon-phone:before {
+      content: "\f095";
+    }
+    .icon-envelope:before {
+      content: "\f003";
+    }
+    .icon-facebook:before {
+      content: "\f09a";
+    }
+    .icon-twitter:before {
+      content: "\F5EF";
+    }
+    
+    .icon-instagram:before {
+      content: "\f16d";
+    }
+    .icon-whatsapp:before {
+      content: "\f232";
+    } */
 
       .footer .quick-info li a { color: #fff;}
 
@@ -302,11 +321,16 @@ hr {
 
           @media (max-width: 767.98px) {
             .footer .footer-menu li a {
-              display: block;
-              padding-left: 0px; 
+              float: left;
+              padding-left: 1rem; 
             } 
           }
-        .footer .footer-menu li:first-child a {padding-left:0; }
-    .footer .site-logo {
-      color: #fff;
-      font-size: 20px; }
+        .footer .footer-menu li:first-child a {padding-left: 1rem; }
+    
+@media (max-width: 767.98px) {
+  .site-logo img {
+    width: 465px;
+    height: 150px;
+  }
+  
+}
