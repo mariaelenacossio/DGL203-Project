@@ -103,7 +103,7 @@ header {
 
 
 /********/
-
+/*Hero img*/
 .hero {
     background-image: url('/img/Quequitos-1.jpg');
     height: 100vh;
@@ -111,8 +111,7 @@ header {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-color: rgba(251, 251, 251, 0.6); }
-  
+}  
 
 .mask {
     background-color: rgba(251, 251, 251, 0.6);
