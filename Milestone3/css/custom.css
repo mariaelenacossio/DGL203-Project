@@ -2,12 +2,47 @@ body {
     font-family: 'Poppins';
 }
 
-.navbar-brand img {
-    width: 250px;
-    height: 50px;
+
+/*Hero img*/
+.hero {
+  background-image: url('/img/Quequitos-1.jpg');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}  
+
+.mask {
+  background-color: rgba(251, 251, 251, 0.6);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
 }
 
+.hero-menu {
+  background-image: url('/img/BG-menu.jpg');
+  /*Photo by <a href="https://unsplash.com/@jamesdant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">James Dant</a> on <a href="https://unsplash.com/s/photos/pancake-shop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>*/
+  
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}  
+
+
+
+/****************************************/
+
 /* Navbar */
+
+
+.navbar-brand img {
+  width: 250px;
+  height: 50px;
+}
+
 header {
   position: absolute;
   top: 0;
@@ -101,24 +136,9 @@ header {
         -webkit-box-shadow: 2px 0 30px -5px rgba(0, 0, 0, 0.2);
         box-shadow: 2px 0 30px -5px rgba(0, 0, 0, 0.2); }
 /********/
+/*toggle btn*/
 
 
-/*Hero img*/
-.hero {
-    background-image: url('/img/Quequitos-1.jpg');
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}  
-
-.mask {
-    background-color: rgba(251, 251, 251, 0.6);
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-}
 
 .benefits .card-body img {
     padding: 2rem;
@@ -166,8 +186,6 @@ hr {
 
 /*footer social*/
     
-
- 
    .footer {
     background-color: #202126;
     padding: 7rem 0;
@@ -216,25 +234,7 @@ hr {
       font-size: 16px;
       margin-bottom: 10px; 
     }
-    /* .icon-phone:before {
-      content: "\f095";
-    }
-    .icon-envelope:before {
-      content: "\f003";
-    }
-    .icon-facebook:before {
-      content: "\f09a";
-    }
-    .icon-twitter:before {
-      content: "\F5EF";
-    }
-    
-    .icon-instagram:before {
-      content: "\f16d";
-    }
-    .icon-whatsapp:before {
-      content: "\f232";
-    } */
+ 
 
       .footer .quick-info li a { color: #fff;}
 
