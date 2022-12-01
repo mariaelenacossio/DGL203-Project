@@ -163,14 +163,7 @@ hr {
     width: 85%;
 }
 
-/* footer latest Events*/
 
-/* .media-left img {
-    width: 60px;
-    height: 60px;
-    padding: 2px;
-    margin: 2px;
-} */
 /*footer social*/
     
 
@@ -200,7 +193,7 @@ hr {
       margin-left: -5px; 
     }
 
-      .footer.row.gallery > [class^="col-"],
+      .footer .row.gallery > [class^="col-"],
       .footer .row.gallery > [class*=" col-"] {
         padding-right: 5px;
         padding-left: 5px; 
