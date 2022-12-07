@@ -208,6 +208,8 @@ header {
   height: 1px;
   background: #333;
   background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 /* BLOCK DIVIDER */
 
@@ -668,8 +670,8 @@ transform: translateX(-50%);
 }
 
 .img-dotted-bg img {
-  -webkit-box-shadow: 10px 10px 0 0 #eee;
-  box-shadow: 10px 10px 0 0 #eee;
+  -webkit-box-shadow: 20px 20px 0 0 #eee;
+  box-shadow: 20px 20px 0 0 #eee;
 }
 
 .img-dotted-bg:after {
@@ -682,3 +684,4 @@ transform: translateX(-50%);
   width: 200px;
   height: 400px;
 }
+/* VISIT US SECTION */
