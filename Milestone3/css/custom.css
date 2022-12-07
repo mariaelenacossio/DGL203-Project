@@ -203,9 +203,11 @@ header {
     height: 80vh;
 }
 /* BLOCK DIVIDER */
-hr {
-  border-color: solid 3px #b3b3b3;
-  width: 85vh;
+.row .style-one hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 /* BLOCK DIVIDER */
 
