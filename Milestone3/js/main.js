@@ -1,6 +1,10 @@
 $(function() {
+	$('.set-bg').each(function () {
+		var bg = $(this).data('setbg');
+		$(this).css('background-image', 'url(' + bg + ')');
+});
 
-  var siteSticky = function() {
+	var siteSticky = function() {
 		$(".js-sticky-header").sticky({topSpacing:0});
 	};
 	siteSticky();
