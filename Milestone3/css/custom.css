@@ -659,3 +659,26 @@ transform: translateX(-50%);
   background: #000;
   border-color: #000;
 }
+.img-fluid-visit {
+  max-width: 100%;
+  height: auto;
+}
+.img-dotted-bg {
+  position: relative;
+}
+
+.img-dotted-bg img {
+  -webkit-box-shadow: 10px 10px 0 0 #eee;
+  box-shadow: 10px 10px 0 0 #eee;
+}
+
+.img-dotted-bg:after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  background: url("../images/dotted.jpg") repeat;
+  bottom: -50px;
+  right: -50px;
+  width: 200px;
+  height: 400px;
+}
