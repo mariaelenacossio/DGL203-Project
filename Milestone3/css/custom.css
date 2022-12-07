@@ -612,3 +612,50 @@ background: #007bff; }
 .owl-2-style .owl-dots .owl-dot:active, .owl-2-style .owl-dots .owl-dot:focus {
 outline: none; }
 /* CAROUSEL FOR TOPPINGS */
+
+/* VISIT US SECTION */
+.section-visit {
+  padding: 7em 0;
+}
+.divider {
+width: 70px;
+height: 6px;
+background: #000;
+display: inline-block;
+position: relative;
+-webkit-transform: translateX(-50%);
+-ms-transform: translateX(-50%);
+transform: translateX(-50%);
+}
+.section-title-visit {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.section-title-visit strong {
+  font-weight: 700;
+}
+.d-block {
+  display: block !important;
+}
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+.text-secondary {
+  color: #6c757d !important;
+}
+.btn-outline-black {
+  border: 2px solid #000;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 0px;
+  padding: 10px 20px;
+  color: #000;
+}
+
+.btn-outline-black:hover {
+  color: #fff;
+  background: #000;
+  border-color: #000;
+}
