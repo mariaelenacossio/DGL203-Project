@@ -199,11 +199,11 @@ header {
 /*Testimonials*/
 .carousel-item img {
     border-radius: 10px;
-    width: 75vh;
+    width: 80vh;
     height: 80vh;
 }
 /* BLOCK DIVIDER */
-.row .style-one hr {
+.style-one hr {
   border: 0;
   height: 1px;
   background: #333;
