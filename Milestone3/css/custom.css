@@ -2,34 +2,62 @@ body {
     font-family: 'Poppins';
 }
 
-
-/*Hero img*/
-.hero {
-  background-image: url('/img/Quequitos-1.jpg');
-  height: 100vh;
-  width: 100%;
+/* HERO SECTION */
+.site-hero {
+  background-color: #ccc;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-}  
-
-.mask {
-  background-color: rgba(251, 251, 251, 0.6);
-  width: 100%;
+  position: relative;
+  overflow: hidden; }
+  .site-hero, .site-hero .row {
   height: 100vh;
-  background-size: cover;
-}
-
-.hero-menu {
-  background-image: url('/img/BG-menu.jpg');
-  /*Photo by <a href="https://unsplash.com/@jamesdant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">James Dant</a> on <a href="https://unsplash.com/s/photos/pancake-shop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>*/
+  min-height: 800px; }
+  .site-hero:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); }
+  .site-hero h1 {
+  font-weight: 200;
+  margin-bottom: 20px;
+  display: block; }
+  .site-hero h1 strong {
+    font-weight: 800; }
+  @media (min-width: 768px) {
+    .site-hero h1 {
+      font-size: 70px; } }
+  .site-hero h1, .site-hero .lead {
+  font-weight: 200;
+  color: #fff; }
+  .site-hero .lead {
+  line-height: 2; }
   
-  height: 100vh;
-  width: 100%;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}  
+  .site-section {
+  padding: 5em 0; }
+  
+  .section-heading {
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 10; }
+  .section-heading h2 {
+  position: relative;
+  font-weight: 200;
+  padding-top: 20px;
+  font-size: 30px; }
+  .section-heading h2 strong {
+    font-weight: 800; }
+  .section-heading.text-center h2:before {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+        
+  /* HERO SECTION */
 
 /****************************************/
 
@@ -174,13 +202,12 @@ header {
     width: 75vh;
     height: 80vh;
 }
-/* Block divider */
+/* BLOCK DIVIDER */
 hr {
-    border-color: #F05F44;
-    height: 5px;
-    width: 85%;
+  border-color: solid 3px #b3b3b3;
+  width: 85vh;
 }
-
+/* BLOCK DIVIDER */
 
 /*footer social*/
     
