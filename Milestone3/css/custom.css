@@ -2,9 +2,7 @@ body {
     font-family: 'Poppins';
 }
 
-.mask .data-setbg{
-  background-color: rgba(0, 0, 0, 0.6);
-}
+
 /* HERO SECTION */
 .site-hero {
   background-color: #ccc;
@@ -202,8 +200,8 @@ header {
 /*Testimonials*/
 .carousel-item img {
     border-radius: 10px;
-    width: 80vh;
-    height: 80vh;
+    width: 100vh;
+    height: 95vh;
 }
 /* BLOCK DIVIDER */
 .style-one hr {
@@ -689,7 +687,7 @@ transform: translateX(-50%);
 }
 /* VISIT US SECTION */
 
-/* PARTY PACK */
+
 .container .party-pack {
   max-width: 960px;
 }
@@ -706,3 +704,29 @@ transform: translateX(-50%);
 .border-bottom { border-bottom: 1px solid #e5e5e5; }
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+/* PARTY PACK */
+
+/* ABOUT US SECTION */
+
+
+/*
+ * Extra utilities
+ */
+
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.flex-equal > * {
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden { overflow: hidden; }
