@@ -2,6 +2,9 @@ body {
     font-family: 'Poppins';
 }
 
+.mask .data-setbg{
+  background-color: rgba(0, 0, 0, 0.6);
+}
 /* HERO SECTION */
 .site-hero {
   background-color: #ccc;
